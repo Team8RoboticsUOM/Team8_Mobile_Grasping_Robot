@@ -11,7 +11,7 @@ Please refer to the documentation provided on the [Leo Rover offical website](ht
 
 This installation procedure assumes that you have installed ROS2 Humble and [Gazebo (preferably ignition version)](https://gazebosim.org/api/gazebo/6.1/install.html) based on Ubuntu 22.04:
 
-1. The first step is the installation of the leo_simulator. Access and clone the [leo simulator-ros2]((https://github.com/LeoRover/leo_simulator-ros2)). You can also go to official ROS website of [leo gazebo](http://wiki.ros.org/leo_gazebo).
+1. The first step is the installation of the leo_simulator. Access and clone the [leo simulator-ros2](https://github.com/LeoRover/leo_simulator-ros2). You can also go to official ROS website of [leo gazebo](http://wiki.ros.org/leo_gazebo).
 
 2. Create a python package and sourcing its setup file. 
 ```
