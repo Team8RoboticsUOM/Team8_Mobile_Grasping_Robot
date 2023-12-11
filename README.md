@@ -22,7 +22,7 @@ source install/local_setup.bash
 
 ## Future Scope
 
-* **`navigation algorithm`** Autonomous driving is widely recognized for leveraging the capabilities of machine learning. To achieve full autonomy for Rover, we can employ techniques such as semantic segmentation and reinforcement learning to further enhance the learning capabilities of our Leo Rover.
+* **`navigation algorithm`** To achieve full autonomy for Rover, we can employ techniques such as semantic segmentation and reinforcement learning to further enhance the learning capabilities of our Leo Rover.
 * **`grasping`** Grasping involves both object recognition and grasping. We will employ various methods rooted in deep learning.The initial strategy aims to achieve robotic arm movement using Gazebo MoveIt and process images using OpenCV.
  [Gazebo MoveIt](https://github.com/bjsowa/interbotix_ros_arms/tree/master) and process images using OpenCV. 
 ## Leo Navigation
