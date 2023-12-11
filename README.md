@@ -1,33 +1,31 @@
 # Mobile Grasping Robot
- This repository is specifically created to compile documentation and code related to Team 8's project. The project focuses on building an autonomous mobile robot using Leo Rover Kits, which includes components like the Pincher X150 mobile arm, RpLiDAR A2M12, and Intel D435 RealSense depth camera. The robot is designed to carry out various tasks, including grasping, navigation, and other functionalities.
+ This repository is specifically created to compile documentation and code related to Team 8's project. The project focuses on building an autonomous mobile robot using Leo Rover Kits, which includes components like the Trossen Robotics Pincher X150 mobile arm, Slamtec RpLiDAR A2M12, and Intel D435 RealSense depth camera. The robot is designed to carry out various tasks, including grasping, navigation, and other functionalities. Please note that the project is still in progress, so the code is incomplete.
 
 ## Table of Contents
 
 1. [Installation](#installation)
 2. [Future Scope](#future-scope)
-3. [Launch Files](#launch-files)
-4. [License](#license)
-
+3. [Leo Navigation](#leo-navigation)
 ## Installation
-Please refer to the documentation provided on the [official Leo Rover website](https://www.leorover.tech/knowledge-base) for the assembly process.
+Please refer to the documentation provided on the [official Leo Rover website](https://www.leorover.tech/knowledge-base) for the assembly process and other information regards leo rover.
 
-This installation procedure assumes that you have installed ROS2 Humble and [Gazebo (preferably version ignition)](https://gazebosim.org/api/gazebo/6.1/install.html) based on Ubuntu 22.04:
+This installation procedure assumes that you have installed ROS2 Humble and [Gazebo (preferably ignition version)](https://gazebosim.org/api/gazebo/6.1/install.html) based on Ubuntu 22.04:
 
-1. The first step is the installation of the leo_simulator. You have to go to this link and clone the [leo simulator](https://github.com/LeoRover/leo_simulator) github repo. You can also go to official ROS website of leo gazebo. You can also go to official ROS website of [leo gazebo](http://wiki.ros.org/leo_gazebo).
+1. The first step is the installation of the leo_simulator. Access this link and clone the [leo simulator-ros2]((https://github.com/LeoRover/leo_simulator-ros2)). You can also go to official ROS website of leo gazebo. You can also go to official ROS website of [leo gazebo](http://wiki.ros.org/leo_gazebo).
 
 2. Create a python package and sourcing its setup file. 
 ```
 ros2 pkg create --build-type ament_python <package_name>
 source install/local_setup.bash
 ```
-3. In the third step you will clone our repo and place it in your package and again repeat the customary step of compiling the python package and sourcing its setup file as stated above. Note the project is not complete yet. 
+3. In the third step, clone our repository and position it within your package. Once again, follow the standard procedure of compiling the Python package and sourcing its setup file, as previously mentioned.
 
 ## Future Scope
 
 * **`navigation algorithm`** Autonomous driving is widely recognized for leveraging the capabilities of machine learning. To achieve full autonomy for Rover, we can employ techniques such as semantic segmentation and reinforcement learning to further enhance the learning capabilities of our Leo Rover.
-* **`grasping realization`** Including object recognition and grasping. We will choose some methods based on deep learning. The preliminary approach is to realize the movement of the robotic arm by gazebo moveit and image processing by OpenCv.
-
-## Launch files
+* **`grasping`** Grasping involves both object recognition and grasping. We will employ various methods rooted in deep learning.The initial strategy aims to achieve robotic arm movement using Gazebo MoveIt and process images using OpenCV.
+ [Gazebo MoveIt](https://github.com/bjsowa/interbotix_ros_arms/tree/master) and process images using OpenCV. 
+## Leo Navigation
 Based on leo_navigation tutorials. The refine is not complete yet.
 * **`odometry.launch`** 
  
@@ -81,26 +79,3 @@ Based on leo_navigation tutorials. The refine is not complete yet.
 [map_server]: http://wiki.ros.org/map_server
 [twist_mux]: http://wiki.ros.org/twist_mux
 [move_base]: http://wiki.ros.org/move_base
-
-## License
-MIT License
-
-Copyright (c) 2020-2021 Kell Ideas Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
